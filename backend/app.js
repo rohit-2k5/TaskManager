@@ -15,8 +15,21 @@ if (!DatabaseUri) {
 }
 
 // cors setup 
+const allowedOrigins = [
+	"http://localhost:5173",
+	"https://taskmanager-ncvb.onrender.com"
+];
+
 const corsOptions = {
-	origin: "http://localhost:5173",
+	origin: function(origin, callback) {
+		// allow requests with no origin (e.g., curl, server-to-server)
+		if (!origin) return callback(null, true);
+		if (allowedOrigins.indexOf(origin) !== -1) {
+			callback(null, true);
+		} else {
+			callback(new Error('Not allowed by CORS'));
+		}
+	},
 	methods: ["GET", "POST", "PATCH", "DELETE"],
 	allowedHeaders: ["Content-Type", "Authorization"],
 	credentials: true,

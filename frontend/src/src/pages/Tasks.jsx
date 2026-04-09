@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Toaster, toast } from 'react-hot-toast';
 
-
-const API = 'http://localhost:8000/tasks';
+// If you want to run the app locally, replace the value below with: 'http://localhost:8000/tasks'
+const API = 'https://taskmanagerbackend-sv53.onrender.com/tasks';
 
 export default function Tasks() {
   const [tasks, setTasks] = useState([]);
