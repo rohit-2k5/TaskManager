@@ -1,9 +1,9 @@
 # Task Manager (Frontend + Backend)
 
-# NOTE 
+## NOTE 
 if you want to run the project locally then create a cluster and give the url in the backend .env file. 
 
-If you don't wanna setup the project locally for checking the visit the live link here [your-live-link.com](https://your-live-link.com)
+If you don't wanna setup the project locally for checking, then visit the live link here [your-live-link.com](https://your-live-link.com)
 
 
 
