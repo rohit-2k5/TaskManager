@@ -1,7 +1,11 @@
 # Task Manager (Frontend + Backend)
 
 # NOTE 
-if you want to run the project locally then create a cluster and give the url otherwise you can check the live project because i have deployed it also so over there you will not need to anything to check the project just visit the live link and check it.
+if you want to run the project locally then create a cluster and give the url in the backend .env file. 
+
+If you don't wanna setup the project locally for checking the visit the live link here [your-live-link.com](https://your-live-link.com)
+
+
 
 Small Task Manager app — React + Vite frontend and Express + Mongoose backend.
 
