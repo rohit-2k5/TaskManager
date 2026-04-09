@@ -1,0 +1,82 @@
+.tasks-page {
+    max-width: 640px;
+    margin: 40px auto;
+    font-family: system-ui, sans-serif;
+}
+
+.task-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.task-form input {
+    flex: 1;
+    padding: 8px;
+}
+
+.task-form button {
+    padding: 8px 12px;
+}
+
+.loading {
+    color: #555;
+}
+
+.error {
+    color: #a33;
+    margin-bottom: 8px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-list li.completed span {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.task-list .delete {
+    background: #ff5c5c;
+    border: none;
+    color: white;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+/* Improved filter button colors for accessibility */
+.filters button {
+    padding: 6px 10px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #222;
+}
+
+.filters button:hover {
+    background: #f3f6fb;
+}
+
+.filters button.active {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
